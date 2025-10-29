@@ -59,7 +59,7 @@ For more examples, please refer to our project page (https://xduzhangjiayu.githu
 [2025.9.29] Paper released!
 
 # 👨‍💻 ToDo
-- [x] Release paper on arxiv
+- [x] Release Paper on arxiv
 - [ ] Release Code based on Wan2.1 and CogVideoX
 
 
