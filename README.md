@@ -90,14 +90,14 @@ Then:
 conda create --name DiTraj python=3.11
 conda activate DiTraj
 pip install -r requirements.txt
-git clone --branch v0.33.1 https://gitee.com/mirrors/diffusers.git
+git clone --branch v0.33.1 https://github.com/huggingface/diffusers.git
 cd diffusers
 pip install -e .
 ```
 Finally:  
 Replace the `./module/transformer_wan.py` file in the `./diffusers/src/diffusers/models/transformers/transformer_wan.py`
 ## Generate your own video!  
-1. First, input your prompts in the test_prompts.txt.
+1. First, input your prompts in the test_prompts.txt. `demo/test_prompts_refined.json` will be generated, including the bg/fg prompt.  
 2. Then, run the following command:    
 ```
 python prompt_extend.py (optional)
@@ -105,7 +105,7 @@ python prompt_extend.py (optional)
 ```
 python prompt_refine.py
 ```
-`demo/test_prompts_refined.json` will be generated, including the bg/fg prompt.  
+
 3. Define your trajectory in run.py (line 16)
 You can set the bbox in several keyframes , (x1,y1) is the bbox top left corner, (x2,y2) is the bottom right corner. Each keyframe uses [frame_id, y1, y2, x1, x2]
 For example:
@@ -129,7 +129,7 @@ bboxs = [
 ```
 python run.py
 ```
-5. The video will be saved in the in 'demo/output.mp4' and 'demo/output_box.mp4' (video with bbox)  
+5. The video will be saved in the in `demo/output.mp4` and `demo/output_box.mp4` (video with bbox)  
 
 <div>
 <div>
