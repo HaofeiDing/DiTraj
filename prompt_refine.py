@@ -17,7 +17,7 @@ system_prompt = \
 '''\nbackground_prompt: Hyper-realistic photography, a lush garden bathed in soft afternoon sunlight. Vibrant roses in red, pink, and yellow bloom densely on climbing trellises, while green ivy creeps up weathered stone walls. A small stone fountain gurgles gently in the center, with water rippling and reflecting the sky. Butterflies flit between lavender bushes, and a honeybee hovers above a daisy. The grass is neatly trimmed, with a winding gravel path.'''
 '''\nI will now provide the prompt for you. Please directly output the foreground_prompt and background_prompt follow the format without extra responses and quotation mark:'''
 
-model_name = "/mnt/zhangjy80/modelzoo_jiayu/Qwen3-8B"  # You can replace it with your local model path
+model_name = "Qwen/Qwen3-8B"  # You can replace it with your local model path
 
 # load the tokenizer and the model
 tokenizer = AutoTokenizer.from_pretrained(model_name)

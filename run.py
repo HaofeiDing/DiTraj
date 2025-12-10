@@ -67,7 +67,7 @@ output_path = args.output_path
 output_path_withbox = args.output_path_withbox
 
 # Available models: Wan-AI/Wan2.1-T2V-14B-Diffusers, Wan-AI/Wan2.1-T2V-1.3B-Diffusers
-model_id = "/mnt/zhangjy80/modelzoo_jiayu/Wan2.1-T2V-1.3B-Diffusers"
+model_id = "Wan-AI/Wan2.1-T2V-1.3B"
 vae = AutoencoderKLWan.from_pretrained(model_id, subfolder="vae", torch_dtype=torch.float32)
 flow_shift = 3.0 # 5.0 for 720P, 3.0 for 480P
 scheduler = UniPCMultistepScheduler(prediction_type='flow_prediction', use_flow_sigmas=True, num_train_timesteps=1000, flow_shift=flow_shift)
