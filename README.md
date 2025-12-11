@@ -97,7 +97,7 @@ pip install -e .
 Finally:  
 Replace the `./module/transformer_wan.py` file in the `./diffusers/src/diffusers/models/transformers/transformer_wan.py`
 ## Generate your own video!  
-1. First, input your prompts in the test_prompts.txt.   
+1. First, input your prompts in the `test_prompts.txt.`   
 2. Then, run the following command:    
 ```
 python prompt_extend.py (optional)
