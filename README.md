@@ -107,7 +107,7 @@ python prompt_refine.py
 ```
  `demo/test_prompts_refined.json` will be generated, including the bg/fg prompt.   
  
-3. Define your trajectory in run.py (line 16)
+3. Define your trajectory in `run.py` (line 15)
 You can set the bbox in several keyframes , (x1,y1) is the bbox top left corner, (x2,y2) is the bottom right corner. Each keyframe uses [frame_id, y1, y2, x1, x2]
 For example:
 ```
