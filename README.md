@@ -122,7 +122,7 @@ bboxs = [
             [0, 0.05, 0.55, 0.05, 0.45], # frame 0: Top-left
             [20, 0.05, 0.55, 0.55, 0.95], # frame 20: Top-right
             [40, 0.45, 0.95, 0.55, 0.95], # frame 40: Bottom-left
-            [60, 0.45, 0.95, 0.05, 0.45], # frame 80: Bottom-right
+            [60, 0.45, 0.95, 0.05, 0.45], # frame 60: Bottom-right
             [80, 0.05, 0.55, 0.05, 0.45], # frame 80: Top-left 
         ]
 ```
