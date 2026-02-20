@@ -62,9 +62,9 @@ import os
 
 
 
-def save_videos_with_bbox(batch_tensors, bbox_savepath, fps=10, input_traj=[]):
+def save_videos_with_bbox(batch_tensors, bbox_savepath, fps=10, input_traj=[], video_length=49):
     # b,samples,c,t,h,w
-    PATHS = plan_path(input_traj)
+    PATHS = plan_path(input_traj, video_length=video_length)
     n_samples = batch_tensors.shape[1]
     for idx, vid_tensor in enumerate(batch_tensors):
         video = vid_tensor.detach().cpu()
