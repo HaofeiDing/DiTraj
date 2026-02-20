@@ -40,6 +40,7 @@ parser.add_argument("--fixRope_step", default=5, type=int)
 parser.add_argument("--num_frame", default=81, type=int)
 parser.add_argument("--height", default=480, type=int)
 parser.add_argument("--width", default=832, type=int)
+parser.add_argument("--fps", default=4, type=int)
 parser.add_argument("--prompt_json", default="demo/test_prompts_refined.json", type=str)
 
 args = parser.parse_args()
@@ -128,7 +129,7 @@ output = pipe(
      latents=latents,
     ).frames[0]
 
-export_to_video(output, output_path, fps=num_frame//4)
+export_to_video(output, output_path, fps=args.fps)
 
 if output_path_withbox is not None:
-    save_videos_with_bbox(torch.Tensor(output).unsqueeze(0).unsqueeze(0).permute(0,1,5,2,3,4), output_path_withbox, fps=num_frame//4, input_traj=bboxs)
+    save_videos_with_bbox(torch.Tensor(output).unsqueeze(0).unsqueeze(0).permute(0,1,5,2,3,4), output_path_withbox, fps=args.fps, input_traj=bboxs)
